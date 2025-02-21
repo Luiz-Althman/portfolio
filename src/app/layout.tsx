@@ -3,6 +3,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
 
+import { Footer } from '@/app/footer';
+
 const raleway = Raleway({
     variable: '--font-raleway',
     subsets: ['latin'],
@@ -23,6 +25,9 @@ export default function RootLayout({
                 <main className="max-w-[1240px] mx-auto px-5 py-8 md:py-9">
                     {children}
                 </main>
+                <div className="bg-purple/10">
+                    <Footer />
+                </div>
             </body>
         </html>
     );

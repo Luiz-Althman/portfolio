@@ -6,12 +6,11 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const menus = [
-    { name: 'Home', id: 'home' },
-    { name: 'Sobre mim', id: 'sobre' },
-    { name: 'Portfólio', id: 'portfolio' },
-    { name: 'Skills', id: 'skills' },
-    { name: 'Carreira', id: 'carreira' },
-    { name: 'Contato', id: 'contato' },
+    { name: 'Sobre mim', id: '#sobre' },
+    { name: 'Portfólio', id: '#portfolio' },
+    { name: 'Skills', id: '#skills' },
+    { name: 'Carreira', id: '#carreira' },
+    { name: 'Contato', id: '#contato' },
 ];
 
 export function Header() {
@@ -21,7 +20,10 @@ export function Header() {
         setActiveSection(activeId);
     };
     return (
-        <header className="flex-1 flex items-center justify-between bg-purple/5  rounded-xl py-3 px-6">
+        <header
+            id="section-banner"
+            className="flex-1 flex items-center justify-between bg-purple/10  rounded-xl py-3 px-6"
+        >
             <div className="flex flex-center">
                 <Link href="/">
                     <Image src={logo} alt="Logo" className="size-9" />
@@ -30,11 +32,11 @@ export function Header() {
             <nav className="flex items-center text-white gap-4 opacity-60 data-[active='true']:text-purple">
                 {menus.map((item) => (
                     <Link
-                        href={`#${item.id}`}
+                        href={`${item.id}`}
                         key={item.id}
                         onClick={() => handleActive(item.id)}
                         data-active={activeSection === item.id}
-                        className="duration-300 data-[active=true]:text-purple data-[active=true]:font-bold"
+                        className="duration-200 data-[active=true]:text-purple data-[active=true]:font-bold hover:text-purple hover:font-bold transition-colors "
                     >
                         {item.name}
                     </Link>

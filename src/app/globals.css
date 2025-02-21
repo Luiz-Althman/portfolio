@@ -12,3 +12,7 @@
 
     /* --font-sans: var(--font-montserrat); */
 }
+
+html {
+    scroll-behavior: smooth !important;
+}

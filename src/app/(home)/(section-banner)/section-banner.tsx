@@ -29,9 +29,18 @@ export function SectionBanner() {
                     Front-End developer
                 </h3>
                 <IconBgRoot>
-                    <IconBgIcon icon={<FaLinkedinIn />} />
-                    <IconBgIcon icon={<FiGithub />} />
-                    <IconBgIcon icon={<FaInstagram />} />
+                    <IconBgIcon
+                        href="https://www.linkedin.com/in/luiz-althman-173656245/"
+                        icon={<FaLinkedinIn />}
+                    />
+                    <IconBgIcon
+                        href="https://github.com/Luiz-Althman"
+                        icon={<FiGithub />}
+                    />
+                    <IconBgIcon
+                        href="https://www.instagram.com/luiz_althman/"
+                        icon={<FaInstagram />}
+                    />
                 </IconBgRoot>
             </div>
             <Avatar />

@@ -1,13 +1,14 @@
+import Link from 'next/link';
 import { GoDownload } from 'react-icons/go';
 
 export function ButtonDownload() {
     return (
-        <a
+        <Link
             download
             href="/files/cv.pdf"
-            className="flex items-center font-semibold"
+            className="flex items-center font-semibold hover:text-white transition duration-300"
         >
             Baixar CV <GoDownload className="size-5" />
-        </a>
+        </Link>
     );
 }

@@ -3,57 +3,68 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { FaArrowRight } from 'react-icons/fa';
-
-import teste from '../../../../assets/image-test.png';
+import bhw from '../../../../assets/bhw.png';
+import hefesto from '../../../../assets/hefesto.jpg';
+import storybook from '../../../../assets/storybook.png';
+import kube from '../../../../assets/4kube.png';
+import codecraft from '../../../../assets/codecraft.png';
+import pizzashop from '../../../../assets/pizzashop.png';
 
 const projects = [
     {
         id: 0,
-        title: 'Project 1',
-        description: 'Description of project 1',
-        flags: ['ReactJs', 'NextJs', 'Typescript'],
-        src: teste,
+        title: 'Best Hunter Wine',
+        description:
+            'E-commerce desenvolvido do zero para a empresa Best Hunter Wine. Aplicação feita em mobile e desktop.',
+        flags: ['Online', 'ReactJs', 'NextJs', 'Material UI'],
+        src: bhw,
         alt: 'text alt',
+        link: 'https://besthunterwine.com.br/',
     },
     {
         id: 1,
-        title: 'Project 2',
-        description: 'Description of project 2',
-        flags: ['ReactJs', 'NextJs', 'Typescript'],
-        src: teste,
+        title: 'Hefesto Medtech',
+        description:
+            'Aplicativo web view para ortopedia 4.0 e venda de orteses 3D (scans feitos dentro do app), para desktop e mobile com integração nativa.',
+        flags: ['ReactJs', 'Tailwind CSS', 'Typescript', 'Yup'],
+        src: hefesto,
         alt: 'text alt',
     },
     {
         id: 2,
-        title: 'Project 3',
-        description: 'Description of project 4',
-        flags: ['ReactJs', ' NextJs', 'Typescript'],
-        src: teste,
+        title: 'Design System',
+        description:
+            'Design system publicado no NPM. Projeto feito do zero dentro do curso da Rocketseat, com hospedagem no github pages.',
+        flags: ['Online', 'ReactJs', 'Stitches', 'Typescript'],
+        src: storybook,
         alt: 'text alt',
+        link: 'https://luiz-althman.github.io/design-system/?path=/docs/home--docs',
     },
     {
         id: 3,
-        title: 'Project 4',
-        description: 'Description of project 4',
-        flags: ['ReactJs', 'NextJs', 'Typescript'],
-        src: teste,
+        title: 'Codecraft',
+        description:
+            'Aplicação onde o usuário pode retirar seu ingresso e criar um link de convite.',
+        flags: ['ReactJs', 'NextJs', 'Tailwind CSS', 'Rockeatseat', 'Zod'],
+        src: codecraft,
         alt: 'text alt',
     },
     {
         id: 4,
-        title: 'Project 5',
-        description: 'Description of project 5',
-        flags: ['ReactJs', 'NextJs', 'Typescript'],
-        src: teste,
+        title: 'Pizza shop',
+        description:
+            'Sistema de backoffice para gerenciamento de restaurantes com testes unitários.',
+        flags: ['ReactJs', 'ViteJs', 'Typescript', 'Tailwind CSS'],
+        src: pizzashop,
         alt: 'text alt',
     },
     {
         id: 5,
-        title: 'Project 6',
-        description: 'Description of project 6',
-        flags: ['Online', 'NextJs', 'Typescript'],
-        src: teste,
+        title: '4Kube',
+        description:
+            'Site feito para uma empresa de DevOps, onde eles conseguiam divulgar seus serviços. Integrado com Typeform.',
+        flags: ['Online', 'ReactJs', 'NextJs', 'Bootstrap'],
+        src: kube,
         alt: 'text alt',
         link: 'https://4kube.com',
     },

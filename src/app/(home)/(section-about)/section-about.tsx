@@ -5,7 +5,10 @@ import Img from '../../../assets/eu-sorrindo.jpg';
 
 export function SectionAbout() {
     return (
-        <section className="py-28 flex justify-between items-center gap-40 border-b border-purple/30">
+        <section
+            id="sobre"
+            className="py-28 flex justify-between items-center gap-40 border-b border-purple/30"
+        >
             <div className="w-1/3">
                 <Image
                     src={Img}
@@ -19,14 +22,14 @@ export function SectionAbout() {
                     <InfoTitleText title="Sobre mim" />
                 </InfoTitleRoot>
                 <h2 className="text-5xl font-extrabold text-white">
-                    Luiz Henrique <br /> Althman Silva Pedro
+                    Luiz Henrique <br /> Althman
                 </h2>
                 <div>
                     <p>
                         👋{' '}
                         <span className="text-white/50">
-                            Me chamo Luiz Henrique Althman Silva Pedro, mas pode
-                            me chamar de Althman, Luiz Althman...Como preferir.{' '}
+                            Me chamo Luiz Henrique Althman, mas pode me chamar
+                            de Althman, Luiz Althman...Como preferir.{' '}
                         </span>
                         😊 <span className="text-white/50">Muito prazer!</span>
                     </p>
