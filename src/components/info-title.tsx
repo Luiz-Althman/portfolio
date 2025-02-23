@@ -1,14 +1,13 @@
 import type { ComponentProps } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-interface InfoTitleRootProps extends ComponentProps<'div'> {
-}
+interface InfoTitleRootProps extends ComponentProps<'div'> {}
 
-export function InfoTitleRoot({className, ...props }: InfoTitleRootProps) {
+export function InfoTitleRoot({ className, ...props }: InfoTitleRootProps) {
     return (
         <div
             className={twMerge(
-                'inline-flex items-center justify-center bg-purple/5 text-xl leading-none  rounded-2xl px-2 py-1.5 font-bold', 
+                'inline-flex items-center justify-center bg-purple/5 text-xl leading-none  rounded-2xl px-2 py-1.5 font-bold',
                 className
             )}
             {...props}

@@ -1,7 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import 'keen-slider/keen-slider.min.css';
+
+import { useKeenSlider } from 'keen-slider/react';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -72,37 +74,22 @@ const projects = [
     },
 ];
 
-export function BoxProjects() {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const section = document.getElementById('projects-section');
-            if (!section) return;
-
-            const rect = section.getBoundingClientRect();
-            if (rect.top < window.innerHeight * 0.75) {
-                setIsVisible(true);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+export function Mobile() {
+    const [sliderRef] = useKeenSlider({
+        mode: 'snap',
+        loop: true,
+        slides: {
+            perView: 1.1,
+            spacing: 15,
+        },
+    });
 
     return (
-        <div id="projects-section" className="flex flex-col md:grid md:grid-cols-3 gap-12">
-            {projects.map((item, index) => (
-                <motion.div
+        <div className="keen-slider max-w-[350px]" ref={sliderRef}>
+            {projects.map((item) => (
+                <div
                     key={item.id}
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={isVisible ? { opacity: 1, y: 0 } : {}}
-                    transition={{
-                        duration: 0.6,
-                        ease: 'easeOut',
-                        delay: index * 0.1,
-                    }}
-                    className={`w-full border rounded-2xl p-7 ${
+                    className={`max-w-[3250px] keen-slider__slide border rounded-2xl p-7  ${
                         item.id % 2 !== 0 ? 'bg-purple/10' : 'border-purple/50'
                     }`}
                 >
@@ -110,10 +97,10 @@ export function BoxProjects() {
                         <h3 className="text-xl font-bold text-white pb-2">
                             {item.title}
                         </h3>
-                        {item.flags[0] === 'Online' && (
+                        {item.flags.includes('Online') && item.link && (
                             <div className="flex justify-end">
                                 <Link
-                                    href={item.link || ''}
+                                    href={item.link}
                                     target="_blank"
                                     className="text-purple/80 hover:text-purple transition-colors duration-300 font-bold"
                                 >
@@ -147,7 +134,7 @@ export function BoxProjects() {
                         width={300}
                         height={200}
                     />
-                </motion.div>
+                </div>
             ))}
         </div>
     );

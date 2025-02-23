@@ -15,7 +15,7 @@ export function Box({ isActive = false, ...props }: BoxProps) {
     return (
         <div
             {...props}
-            className={`rounded-2xl p-8 mb-16 max-w-[580px] max-h-[220px] ${
+            className={`rounded-2xl p-8 mb-16 md:max-w-[580px] md:max-h-[220px] ${
                 isActive ? 'bg-purple/10' : 'border border-purple/50 '
             }`}
         >

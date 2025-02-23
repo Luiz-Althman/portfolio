@@ -2,16 +2,16 @@
 
 import type { IconType } from 'react-icons';
 
-interface BoxTechsProps {
+interface MobileProps {
     h3: string;
     icons: ReadonlyArray<{ icon: IconType; name: string }>;
 }
 
-export function BoxTechs({ h3, icons }: BoxTechsProps) {
+export function Mobile({ h3, icons }: MobileProps) {
     return (
         <div className="pb-14 flex flex-col gap-10">
             <h3 className="text-2xl text-white/50">{h3}</h3>
-            <div className="flex justify-center items-center gap-8">
+            <div className="grid grid-cols-3 gap-6">
                 {icons.map(({ icon: Icon, name }, index) => (
                     // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                     <div key={index} className="relative group">

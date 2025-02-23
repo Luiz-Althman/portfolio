@@ -1,4 +1,5 @@
 import { Header } from '@/app/header';
+import { Footer } from '@/app/footer';
 import { SectionBanner } from './(section-banner)/section-banner';
 import { SectionShowcase } from './(section-showcase)/section-showcase';
 import { SectionAbout } from './(section-about)/section-about';
@@ -10,14 +11,19 @@ import { SectionContact } from './(section-contact)/section.contact';
 export default function Home() {
     return (
         <div>
-            <Header />
-            <SectionBanner />
-            <SectionShowcase />
-            <SectionAbout />
-            <SectionPortfolio />
-            <SectionSkills />
-            <SectionWorkHistory />
-            <SectionContact />
+            <div className="md:max-w-[1240px] max-w-3xl mx-auto px-5 md:py-9">
+                <Header />
+                <SectionBanner />
+                <SectionShowcase />
+                <SectionAbout />
+                <SectionPortfolio />
+                <SectionSkills />
+                <SectionWorkHistory />
+                <SectionContact />
+            </div>
+            <div className="bg-purple/10">
+                <Footer />
+            </div>
         </div>
     );
 }

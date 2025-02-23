@@ -22,7 +22,7 @@ export function Header() {
     return (
         <header
             id="section-banner"
-            className="flex-1 flex items-center justify-between bg-purple/10  rounded-xl py-3 px-6"
+            className="hidden md:flex-1 md:flex items-center justify-between bg-purple/10  rounded-xl py-3 px-6"
         >
             <div className="flex flex-center">
                 <Link href="/">

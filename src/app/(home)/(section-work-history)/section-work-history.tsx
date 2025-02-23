@@ -1,14 +1,16 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import { InfoTitleRoot, InfoTitleText } from '@/components/info-title';
 import { Box } from './components/box';
 import { BoxWorksArray, BoxAcademicArray } from '@/mock/section-work-history';
+import { Mobile } from './mobile';
 
 export function SectionWorkHistory() {
     return (
         <section
             id="carreira"
-            className="py-28 flex flex-col justify-center items-center border-b border-purple/30"
+            className="md:py-28 py-12 flex flex-col justify-center items-center md:border-b md:border-purple/30"
         >
             <div className="pb-16 text-center">
                 <InfoTitleRoot>
@@ -20,7 +22,7 @@ export function SectionWorkHistory() {
                 </h2>
             </div>
 
-            <div className="flex gap-16">
+            <div className="flex flex-col md:flex-row gap-16">
                 <div>
                     <div className="text-center pb-16">
                         <h3 className="text-3xl text-white font-extrabold">
@@ -30,38 +32,71 @@ export function SectionWorkHistory() {
                             2022 · Atualmente
                         </span>
                     </div>
-                    {BoxWorksArray.map((item) => (
-                        <Box
-                            key={item.id}
-                            isActive={item.isActive && true}
-                            description={item.description}
-                            period={item.period}
-                            role={item.role}
-                            subtitle={item.subtitle}
-                            time={item.time}
-                        />
-                    ))}
+                    <div className="block md:hidden">
+                        <Mobile />
+                    </div>
+                    <div className="md:block hidden">
+                        {BoxWorksArray.map((item, index) => (
+                            <motion.div
+                                key={item.id}
+                                initial={{ opacity: 0, y: -100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 0.6,
+                                    ease: 'easeOut',
+                                    delay: index * 0.1,
+                                }}
+                                viewport={{ once: true }}
+                            >
+                                <Box
+                                    isActive={item.isActive}
+                                    description={item.description}
+                                    period={item.period}
+                                    role={item.role}
+                                    subtitle={item.subtitle}
+                                    time={item.time}
+                                />
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
+
                 <div>
                     <div className="text-center pb-16">
                         <h3 className="text-3xl text-white font-extrabold">
-                            Acadêmica
+                            Área acadêmica
                         </h3>
                         <span className="text-white/50 text-2xl">
                             2022 · Atualmente
                         </span>
                     </div>
-                    {BoxAcademicArray.map((item) => (
-                        <Box
-                            key={item.id}
-                            isActive={item.isActive && true}
-                            description={item.description}
-                            period={item.period}
-                            role={item.role}
-                            subtitle={item.subtitle}
-                            time={item.time}
-                        />
-                    ))}
+                    <div className="md:block hidden">
+                        {BoxAcademicArray.map((item, index) => (
+                            <motion.div
+                                key={item.id}
+                                initial={{ opacity: 0, y: -100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 0.6,
+                                    ease: 'easeOut',
+                                    delay: index * 0.1,
+                                }}
+                                viewport={{ once: true }}
+                            >
+                                <Box
+                                    isActive={item.isActive}
+                                    description={item.description}
+                                    period={item.period}
+                                    role={item.role}
+                                    subtitle={item.subtitle}
+                                    time={item.time}
+                                />
+                            </motion.div>
+                        ))}
+                    </div>
+                    {/* <div className="block md:hidden">
+                        <Mobile />
+                    </div> */}
                 </div>
             </div>
         </section>

@@ -55,7 +55,7 @@ export const BoxAcademicArray = [
         subtitle: 'Rocketseat',
         description:
             'Desenvolvi um site responsivo do zero para inscrição em eventos, onde o usuário pode retirar seu ingresso e criar um link de convite. ',
-        time: '7 dias',
+        time: '5 dias',
         period: 'Fevereiro/2025',
     },
     {

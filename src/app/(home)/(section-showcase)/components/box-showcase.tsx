@@ -1,5 +1,7 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import { FaCode } from 'react-icons/fa6';
 import { GoFileDirectory } from 'react-icons/go';
 import { FaRegCalendarAlt } from 'react-icons/fa';
@@ -44,13 +46,36 @@ const labels = [
 ];
 
 export function BoxShowcase() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const section = document.getElementById('box-showcase');
+            if (!section) return;
+
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.75) {
+                setIsVisible(true);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <div className="flex flex-col gap-8">
-            <div className="flex w-full justify-between gap-20">
+        <motion.div
+            id="box-showcase"
+            initial={{ opacity: 0, y: 50 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="flex flex-col gap-8"
+        >
+            <div className="flex w-full flex-col md:flex-row md:justify-between gap-20">
                 {boxs.map((item) => (
                     <div
                         key={`id-${item.id}`}
-                        className={`inline-flex flex-col items-center justify-center  py-10 px-5 w-[246px] h-[200px] rounded-2xl text-purple/80 
+                        className={`inline-flex flex-col items-center justify-center py-10 px-5 w-[246px] h-[200px] rounded-2xl text-purple/80 
                       ${item.id % 2 !== 0 && 'bg-purple/10'} 
                       ${item.id !== 1 && 'border border-purple/50'}`}
                     >
@@ -62,7 +87,7 @@ export function BoxShowcase() {
                     </div>
                 ))}
             </div>
-            <div className="grid grid-cols-3 py-6 bg-purple/10 rounded-2xl gap-20">
+            <div className=" hidden md:grid md:grid-cols-3 py-6 bg-purple/10 rounded-2xl gap-20">
                 {labels.map((item) => (
                     <div
                         key={`idx-${item.id}`}
@@ -73,6 +98,6 @@ export function BoxShowcase() {
                     </div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 }
