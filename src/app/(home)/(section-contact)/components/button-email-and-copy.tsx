@@ -26,7 +26,7 @@ export function ButtonEmailAndCopy() {
                 <button
                     onClick={copyInviteLink}
                     disabled={copied}
-                    aria-label="Botão para copiar e-mail"
+                    aria-label="Botão para copiar e-mail do Luiz Althman"
                     className="flex items-center gap-2 text-purple/50 transition duration-300 cursor-pointer relative group disabled:cursor-not-allowed"
                 >
                     {copied ? (
@@ -42,6 +42,7 @@ export function ButtonEmailAndCopy() {
                 </button>
                 <Link
                     href="mailto:luizalthmandev@gmail.com"
+                    aria-label="Botão para enviar um e-mail para o Luiz Althman"
                     className="cursor-pointer text-purple/50 hover:text-white transition duration-300"
                 >
                     <FiSend className="size-5" />

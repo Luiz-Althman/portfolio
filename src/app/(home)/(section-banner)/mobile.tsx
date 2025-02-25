@@ -14,14 +14,17 @@ export function Mobile() {
                     <IconBgIcon
                         href="https://www.linkedin.com/in/luiz-althman-173656245/"
                         icon={<FaLinkedinIn />}
+                        aria-label="Botão que redireciona para o linkedin do Luiz Althman"
                     />
                     <IconBgIcon
                         href="https://github.com/Luiz-Althman"
                         icon={<FiGithub />}
+                        aria-label="Botão que redireciona para o github do Luiz Althman"
                     />
                     <IconBgIcon
                         href="https://www.instagram.com/luiz_althman/"
                         icon={<FaInstagram />}
+                        aria-label="Botão que redireciona para o instagram do Luiz Althman"
                     />
                 </IconBgRoot>
             </div>
@@ -39,11 +42,11 @@ export function Mobile() {
                         Althman
                     </h1>
 
-                    <h3 className="pb-6 md:text-xl text-[18px] text-white opacity-50">
+                    <h2 className="pb-6 md:text-xl text-[18px] text-white opacity-50">
                         Front-End developer
-                    </h3>
+                    </h2>
                 </div>
-                <div className="text-purple/50 flex justify-start gap-4 ">
+                <div className="text-purple-100 flex justify-start gap-4 ">
                     <ButtonDownload />
                     <ButtonWhatsApp />
                 </div>

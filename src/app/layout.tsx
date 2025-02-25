@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     icons: {
         icon: './favicon.svg',
     },
+    description:
+        'Explore meu portfólio e conheça meus projetos como desenvolvedor front-end. Especializado em React, Next.js e tecnologias modernas, crio interfaces dinâmicas, acessíveis e otimizadas para a melhor experiência do usuário. Veja meus trabalhos, minhas habilidades e entre em contato para colaborações!',
 };
 
 export default function RootLayout({

@@ -10,7 +10,7 @@ export function Avatar() {
     return (
         <div className="relative">
             <div className="absolute top-4 right-0 z-[-1]">
-                <Image src={ellipse} alt="" />
+                <Image src={ellipse} alt="" loading="lazy" />
             </div>
 
             <div className="bg-dark/50 inline-flex absolute top-28 md:left-6 left-2  p-3 rounded-full animate-bounce">

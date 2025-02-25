@@ -32,10 +32,10 @@ export function Box({ isActive = false, ...props }: BoxProps) {
                     </p>
                 </div>
                 <footer className="flex justify-between items-center">
-                    <span className="text-purple font-bold text-xs md:text-xl">
+                    <span className="text-purple-100 font-bold text-xs md:text-xl">
                         {props.time}
                     </span>
-                    <span className="text-purple md:text-purple/50 font-bold md:font-normal text-xs md:text-xl">
+                    <span className="text-purple-100 md:text-purple/50 font-bold md:font-normal text-xs md:text-xl">
                         {props.period}
                     </span>
                 </footer>

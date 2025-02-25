@@ -102,7 +102,7 @@ export function Mobile() {
                                 <Link
                                     href={item.link}
                                     target="_blank"
-                                    className="text-purple/80 hover:text-purple transition-colors duration-300 font-bold"
+                                    className="text-purple-100 hover:text-purple transition-colors duration-300 font-bold"
                                 >
                                     Acessar
                                 </Link>
@@ -121,7 +121,7 @@ export function Mobile() {
                                 className={`rounded-lg px-2 py-1 text-xs ${
                                     flag === 'Online'
                                         ? 'bg-green/30 text-green'
-                                        : 'text-purple bg-purple/10'
+                                        : 'text-purple-100 border border-purple'
                                 }`}
                             >
                                 <span className="font-bold">{flag}</span>

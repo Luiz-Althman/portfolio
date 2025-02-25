@@ -29,7 +29,7 @@ interface InfoTitleTextProps extends ComponentProps<'p'> {
 
 export function InfoTitleText({ title, ...props }: InfoTitleTextProps) {
     return (
-        <p {...props} className="text-purple ">
+        <p {...props} className="text-purple-100">
             {title}
         </p>
     );
