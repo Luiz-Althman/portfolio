@@ -17,9 +17,12 @@ export function ButtonEmailAndCopy() {
     }
     return (
         <div className="flex flex-col">
-            <span className="text-xl text-purple text-center">E-mail: </span>
-            <div className="flex items-center gap-3">
+            <span className="text-xl text-purple md:text-center text-start">
+                E-mail:{' '}
+            </span>
+            <div className="flex items-center md:gap-3 gap-5">
                 <span className="text-white/50">luizalthmandev@gmail.com</span>
+                {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
                 <button
                     onClick={copyInviteLink}
                     disabled={copied}
@@ -40,7 +43,7 @@ export function ButtonEmailAndCopy() {
                     href="mailto:luizalthmandev@gmail.com"
                     className="cursor-pointer text-purple/50 hover:text-white transition duration-300"
                 >
-                    <FiSend className="size-5 " />
+                    <FiSend className="size-5" />
                 </Link>
             </div>
         </div>

@@ -51,28 +51,38 @@ export const BoxAcademicArray = [
     {
         id: 0,
         isActive: false,
-        role: 'NLW connect #19 - Evento de programação',
+        role: 'NLW connect #19 - ReactJs',
         subtitle: 'Rocketseat',
         description:
-            'Desenvolvi um site responsivo do zero para inscrição em eventos, onde o usuário pode retirar seu ingresso e criar um link de convite. ',
+            'Desenvolvi um site responsivo para inscrição em eventos, onde o usuário pode retirar seu ingresso e criar um link de convite.',
         time: '5 dias',
         period: 'Fevereiro/2025',
     },
     {
         id: 1,
-        role: 'Análise e Desenvolvimento de Sistemas',
-        subtitle: 'Faculdade Impacta',
+        isActive: false,
+        role: 'NLW connect #19 - NodeJs',
+        subtitle: 'Rocketseat',
         description:
-            'Desenvolvi inúmeros projetos sendo um deles em ViteJs, no qual era uma rede social onde tinha o Front-end e Back-end.',
-        time: '2 anos e 5 meses',
-        period: 'Outubro/2022 - Dezembro/2024',
+            'Desenvolvi a API para uma aplicação de inscrição em eventos, onde o usuário pode retirar seu ingresso e criar um link de convite.',
+        time: '5 dias',
+        period: 'Fevereiro/2025',
     },
     {
         id: 2,
+        role: 'Análise e Desenvolvimento de Sistemas',
+        subtitle: 'Faculdade Impacta',
+        description:
+            'Desenvolvimento de projetos utilizando ReactJs onde um deles era uma rede social.',
+        time: '2.5 anos',
+        period: 'Outubro/2022 - Dezembro/2024',
+    },
+    {
+        id: 3,
         role: 'Web Designer',
         subtitle: 'SENAI de Informática',
         description:
-            'Curso de Html, Css, Javascript puro. Fiz o projeto de um site no figma e após isso, desenvolvi o site. ',
+            'Curso de Html, Css, Javascript puro. Fiz meu prmieiro projeto de um site no figma e o desenvolvi.',
         time: '3 meses',
         period: 'Janeiro/2022 - Março/2022',
     },

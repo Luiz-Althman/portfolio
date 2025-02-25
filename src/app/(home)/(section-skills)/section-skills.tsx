@@ -34,16 +34,17 @@ export function SectionSkills() {
     return (
         <section
             id="skills"
-            className="md:py-28 py-12 flex flex-col justify-center items-center md:border-b md:border-purple/30"
+            className="md:py-28 pb-12 flex flex-col justify-center md:items-center md:border-b md:border-purple/30"
         >
-            <div className="block md:hidden">
-                <div className="">
+            <div className="md:hidden flex flex-1 flex-col items-start">
+                <div className="pb-8">
                     <InfoTitleRoot>
                         <span className="mr-2">👨‍💻</span>
                         <InfoTitleText title="Skills · Experiências" />
                     </InfoTitleRoot>
-                    <h2 className="text-5xl font-extrabold text-white pt-6">
-                        Tecnologias e habilidades
+
+                    <h2 className="text-2xl font-extrabold text-white pt-6 ">
+                        Tecnologias <br /> e habilidades
                     </h2>
                 </div>
                 <div>

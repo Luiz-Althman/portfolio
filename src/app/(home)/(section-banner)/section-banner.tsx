@@ -24,10 +24,10 @@ export function SectionBanner() {
                     <InfoTitleText title="Saudações!" />
                 </InfoTitleRoot>
                 <div className="flex flex-col">
-                    <h2 className="font-extrabold text-5xl text-white pt-6 pb-4">
+                    <h1 className="font-extrabold text-5xl text-white pt-6 pb-4">
                         Luiz <br />
                         Althman
-                    </h2>
+                    </h1>
 
                     <h3 className="pb-6 text-xl text-white opacity-50">
                         Front-End developer

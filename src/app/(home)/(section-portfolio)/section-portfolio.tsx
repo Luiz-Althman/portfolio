@@ -4,15 +4,18 @@ import { Mobile } from './components/mobile';
 
 export function SectionPortfolio() {
     return (
-        <section className="py-12 md:py-28 flex flex-col justify-center items-center md:border-b md:border-purple/30">
+        <section className="pb-12 md:py-28 flex flex-col justify-center items-center md:border-b md:border-purple/30">
             <div>
-                <div className="pb-24" id="portfolio">
+                <div className="md:pb-24 pb-10" id="portfolio">
                     <InfoTitleRoot>
                         <span className="mr-2">🔗</span>
                         <InfoTitleText title="Portfolio" />
                     </InfoTitleRoot>
-                    <h2 className="text-5xl font-extrabold text-white pt-6">
+                    <h2 className="text-5xl font-extrabold text-white pt-4 hidden md:block">
                         Trabalhos e projetos
+                    </h2>
+                    <h2 className="text-2xl font-extrabold text-white pt-4 md:hidden block">
+                        Trabalhos <br /> e projetos
                     </h2>
                 </div>
                 <div className="block md:hidden">

@@ -5,30 +5,45 @@ import { InfoTitleRoot, InfoTitleText } from '@/components/info-title';
 import { Box } from './components/box';
 import { BoxWorksArray, BoxAcademicArray } from '@/mock/section-work-history';
 import { Mobile } from './mobile';
+import 'keen-slider/keen-slider.min.css';
+
+import { useKeenSlider } from 'keen-slider/react';
 
 export function SectionWorkHistory() {
+    const [sliderRef] = useKeenSlider({
+        mode: 'snap',
+        loop: true,
+        slides: {
+            perView: 1.1,
+            spacing: 10,
+        },
+    });
+
     return (
         <section
             id="carreira"
-            className="md:py-28 py-12 flex flex-col justify-center items-center md:border-b md:border-purple/30"
+            className="md:py-28 flex flex-col md:justify-center md:items-center md:border-b md:border-purple/30"
         >
-            <div className="pb-16 text-center">
+            <div className="md:pb-16 pb-6 md:text-center">
                 <InfoTitleRoot>
                     <span className="mr-2">💼</span>
                     <InfoTitleText title="Carreira" />
                 </InfoTitleRoot>
-                <h2 className="text-5xl font-extrabold text-white pt-6">
+                <h2 className="text-5xl font-extrabold text-white pt-4 hidden md:block">
                     Trajetória até aqui
+                </h2>
+                <h2 className="text-2xl font-extrabold text-white pt-4 md:hidden block">
+                    Trajetória <br /> até aqui
                 </h2>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-16">
+            <div className="flex flex-col md:flex-row md:gap-16">
                 <div>
-                    <div className="text-center pb-16">
-                        <h3 className="text-3xl text-white font-extrabold">
+                    <div className="md:text-center md:pb-16 pb-6">
+                        <h3 className="md:text-3xl text-white font-extrabold">
                             Área profissional
                         </h3>
-                        <span className="text-white/50 text-2xl">
+                        <span className="text-white/50 md:text-2xl text-xs">
                             2022 · Atualmente
                         </span>
                     </div>
@@ -62,11 +77,11 @@ export function SectionWorkHistory() {
                 </div>
 
                 <div>
-                    <div className="text-center pb-16">
-                        <h3 className="text-3xl text-white font-extrabold">
+                    <div className="md:text-center md:pb-16 pb-6">
+                        <h3 className="md:text-3xl text-white font-extrabold">
                             Área acadêmica
                         </h3>
-                        <span className="text-white/50 text-2xl">
+                        <span className="text-white/50 md:text-2xl text-xs">
                             2022 · Atualmente
                         </span>
                     </div>
@@ -94,9 +109,28 @@ export function SectionWorkHistory() {
                             </motion.div>
                         ))}
                     </div>
-                    {/* <div className="block md:hidden">
-                        <Mobile />
-                    </div> */}
+                    <div className="block w-full md:hidden">
+                        <div
+                            className="keen-slider max-w-[330px]"
+                            ref={sliderRef}
+                        >
+                            {BoxAcademicArray.map((item) => (
+                                <div
+                                    key={item.id}
+                                    className="keen-slider__slide"
+                                >
+                                    <Box
+                                        isActive={item.isActive}
+                                        description={item.description}
+                                        period={item.period}
+                                        role={item.role}
+                                        subtitle={item.subtitle}
+                                        time={item.time}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

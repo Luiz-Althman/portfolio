@@ -89,12 +89,12 @@ export function Mobile() {
             {projects.map((item) => (
                 <div
                     key={item.id}
-                    className={`max-w-[3250px] keen-slider__slide border rounded-2xl p-7  ${
+                    className={`max-w-[3250px] keen-slider__slide border rounded-2xl p-6  ${
                         item.id % 2 !== 0 ? 'bg-purple/10' : 'border-purple/50'
                     }`}
                 >
                     <div className="flex justify-between">
-                        <h3 className="text-xl font-bold text-white pb-2">
+                        <h3 className=" font-bold text-white pb-2">
                             {item.title}
                         </h3>
                         {item.flags.includes('Online') && item.link && (
@@ -110,15 +110,15 @@ export function Mobile() {
                         )}
                     </div>
 
-                    <p className="text-sm text-white/50 pb-8">
+                    <p className="text-sm text-white/50 pb-4">
                         {item.description}
                     </p>
-                    <div className="flex flex-wrap gap-2 pb-6">
+                    <div className="flex flex-wrap gap-2 pb-4">
                         {item.flags.map((flag, index) => (
                             <div
                                 // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                                 key={index}
-                                className={`rounded-lg px-2 py-1 ${
+                                className={`rounded-lg px-2 py-1 text-xs ${
                                     flag === 'Online'
                                         ? 'bg-green/30 text-green'
                                         : 'text-purple bg-purple/10'

@@ -9,21 +9,22 @@ export function SectionContact() {
     return (
         <section
             id="contato"
-            className="py-28 flex flex-col justify-center items-center"
+            className="md:py-28 py-12 flex flex-col justify-center md:items-center items-start"
         >
-            <div className="pb-16 text-center">
+            <div className="md:pb-16 pb-6 text-left md:text-center inline-flex flex-col justify-center md:items-center items-start">
                 <InfoTitleRoot>
                     <span className="mr-2">📬</span>
                     <InfoTitleText title="Contatos" />
                 </InfoTitleRoot>
-                <h2 className="text-5xl font-extrabold text-white pt-6">
-                    Vamos conversar!
+                <h2 className="text-5xl font-extrabold text-white pt-4 hidden md:block">
+                    Entre em contato
+                </h2>
+                <h2 className="text-2xl font-extrabold text-white pt-4 md:hidden block">
+                    Entre <br /> em contato
                 </h2>
             </div>
-            <div>
-                <div className="flex items-center gap-10">
-                    <ButtonWhatsApp /> <ButtonEmailAndCopy />
-                </div>
+            <div className="flex md:flex-row flex-col items-start gap-10">
+                <ButtonWhatsApp /> <ButtonEmailAndCopy />
             </div>
             <Link
                 href="#section-banner"

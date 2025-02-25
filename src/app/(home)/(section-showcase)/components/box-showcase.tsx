@@ -81,7 +81,7 @@ export function BoxShowcase() {
                     >
                         <span>{item.icon}</span>
                         <span className="text-white py-2">{item.text}</span>
-                        <span className="text-3xl text-white font-bold leading-none">
+                        <span className="md:text-3xl text-2xl text-white font-bold leading-none">
                             {item.title}
                         </span>
                     </div>

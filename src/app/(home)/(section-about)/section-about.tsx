@@ -29,7 +29,7 @@ export function SectionAbout() {
     return (
         <section
             id="sobre"
-            className="py-12 md:py-28 flex flex-col md:flex-row md:justify-between md:items-center gap-40 md:border-b md:border-purple/30"
+            className="pb-12 md:py-28 flex flex-col md:flex-row md:justify-between md:items-center gap-40 md:border-b md:border-purple/30"
         >
             <div className="block md:hidden">
                 <Mobile />

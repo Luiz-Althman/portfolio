@@ -7,7 +7,7 @@ export function InfoTitleRoot({ className, ...props }: InfoTitleRootProps) {
     return (
         <div
             className={twMerge(
-                'inline-flex items-center justify-center bg-purple/5 text-xl leading-none  rounded-2xl px-2 py-1.5 font-bold',
+                'inline-flex items-center justify-center bg-purple/5 md:text-xl text-sm leading-none  rounded-2xl px-2 py-1.5 font-bold',
                 className
             )}
             {...props}
@@ -29,7 +29,7 @@ interface InfoTitleTextProps extends ComponentProps<'p'> {
 
 export function InfoTitleText({ title, ...props }: InfoTitleTextProps) {
     return (
-        <p {...props} className="text-purple">
+        <p {...props} className="text-purple ">
             {title}
         </p>
     );
