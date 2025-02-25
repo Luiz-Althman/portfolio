@@ -29,23 +29,26 @@ export function SectionBanner() {
                         Althman
                     </h1>
 
-                    <h3 className="pb-6 text-xl text-white opacity-50">
+                    <h2 className="pb-6 text-xl text-white opacity-50">
                         Front-End developer
-                    </h3>
+                    </h2>
                 </div>
 
                 <IconBgRoot>
                     <IconBgIcon
                         href="https://www.linkedin.com/in/luiz-althman-173656245/"
                         icon={<FaLinkedinIn />}
+                        aria-label="Botão que redireciona para o linkedin do Luiz Althman"
                     />
                     <IconBgIcon
                         href="https://github.com/Luiz-Althman"
                         icon={<FiGithub />}
+                        aria-label="Botão que redireciona para o github do Luiz Althman"
                     />
                     <IconBgIcon
                         href="https://www.instagram.com/luiz_althman/"
                         icon={<FaInstagram />}
+                        aria-label="Botão que redireciona para o instagram do Luiz Althman"
                     />
                 </IconBgRoot>
             </div>
@@ -53,7 +56,7 @@ export function SectionBanner() {
                 <Avatar />
             </div>
 
-            <div className="text-purple/50 md:flex items-end justify-center flex-col gap-4 hidden">
+            <div className="text-purple-100 md:flex items-end justify-center flex-col gap-4 hidden">
                 <ButtonDownload />
                 <ButtonWhatsApp />
             </div>

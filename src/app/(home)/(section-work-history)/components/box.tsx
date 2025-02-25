@@ -4,7 +4,7 @@ import type { ComponentProps } from 'react';
 
 interface BoxProps extends ComponentProps<'div'> {
     isActive?: boolean;
-    role: string;
+    title: string;
     subtitle: string;
     description: string;
     time: string;
@@ -22,7 +22,7 @@ export function Box({ isActive = false, ...props }: BoxProps) {
             <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-1 min-h-[140px] md:min-h-0">
                     <h4 className="text-white md:text-xl font-bold">
-                        {props.role}
+                        {props.title}
                     </h4>
                     <span className="text-white/50 text-sm md:text-lg">
                         {props.subtitle}

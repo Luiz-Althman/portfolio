@@ -28,7 +28,7 @@ export function Mobile() {
                         isActive={item.isActive}
                         description={item.description}
                         period={item.period}
-                        role={item.role}
+                        title={item.title}
                         subtitle={item.subtitle}
                         time={item.time}
                     />

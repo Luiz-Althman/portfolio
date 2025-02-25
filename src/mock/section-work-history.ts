@@ -2,7 +2,7 @@ export const BoxWorksArray = [
     {
         id: 0,
         isActive: true,
-        role: 'Desenvolvedor Front-End Web',
+        title: 'Desenvolvedor Front-End Web',
         subtitle: 'Freelancer',
         description:
             'Serviços freelancer em vários tipos de projetos. Sites, softwares, e muito mais. ',
@@ -11,7 +11,7 @@ export const BoxWorksArray = [
     },
     {
         id: 1,
-        role: 'Desenvolvedor Front-End Jr',
+        title: 'Desenvolvedor Front-End Jr',
         subtitle: 'Hefesto Medtech',
         description:
             'Desenvolvimento de um app web view com integração nativa (Apple) e de um Backoffice para gestão da plataforma.',
@@ -20,7 +20,7 @@ export const BoxWorksArray = [
     },
     {
         id: 2,
-        role: 'Desenvolvedor Front-End Web',
+        title: 'Desenvolvedor Front-End Web',
         subtitle: 'Labj - Freelancer',
         description:
             'Criação de mais de 10 landing pages com Bootstrap, Tailwind CSS e React. ',
@@ -29,7 +29,7 @@ export const BoxWorksArray = [
     },
     {
         id: 3,
-        role: 'Desenvolvedor Front-End Web',
+        title: 'Desenvolvedor Front-End Web',
         subtitle: 'Labj - Freelancer',
         description:
             'Desenvolvemos um e-commerce e um backoffice para um empresa de vinhos. Feitos com ReactJs, NextJs, Material UI e Styled Components.',
@@ -38,7 +38,7 @@ export const BoxWorksArray = [
     },
     {
         id: 4,
-        role: 'Desenvolvedor Front-End Web',
+        title: 'Desenvolvedor Front-End Web',
         subtitle: 'Labj - Freelancer',
         description:
             'Realizamos a construção de um site para uma empresa de DevOps, onde eles conseguiam divulgar seus serviços.',
@@ -51,7 +51,7 @@ export const BoxAcademicArray = [
     {
         id: 0,
         isActive: false,
-        role: 'NLW connect #19 - ReactJs',
+        title: 'NLW connect #19 - ReactJs',
         subtitle: 'Rocketseat',
         description:
             'Desenvolvi um site responsivo para inscrição em eventos, onde o usuário pode retirar seu ingresso e criar um link de convite.',
@@ -61,7 +61,7 @@ export const BoxAcademicArray = [
     {
         id: 1,
         isActive: false,
-        role: 'NLW connect #19 - NodeJs',
+        title: 'NLW connect #19 - NodeJs',
         subtitle: 'Rocketseat',
         description:
             'Desenvolvi a API para uma aplicação de inscrição em eventos, onde o usuário pode retirar seu ingresso e criar um link de convite.',
@@ -70,7 +70,7 @@ export const BoxAcademicArray = [
     },
     {
         id: 2,
-        role: 'Análise e Desenvolvimento de Sistemas',
+        title: 'Análise e Desenvolvimento de Sistemas',
         subtitle: 'Faculdade Impacta',
         description:
             'Desenvolvimento de projetos utilizando ReactJs onde um deles era uma rede social.',
@@ -79,7 +79,7 @@ export const BoxAcademicArray = [
     },
     {
         id: 3,
-        role: 'Web Designer',
+        title: 'Web Designer',
         subtitle: 'SENAI de Informática',
         description:
             'Curso de Html, Css, Javascript puro. Fiz meu prmieiro projeto de um site no figma e o desenvolvi.',

@@ -9,14 +9,17 @@ export function Footer() {
                 <IconBgIcon
                     href="https://www.linkedin.com/in/luiz-althman-173656245/"
                     icon={<FaLinkedinIn />}
+                    aria-label="Botão que redireciona para o linkedin do Luiz Althman"
                 />
                 <IconBgIcon
                     href="https://github.com/Luiz-Althman"
                     icon={<FiGithub />}
+                    aria-label="Botão que redireciona para o github do Luiz Althman"
                 />
                 <IconBgIcon
                     href="https://www.instagram.com/luiz_althman/"
                     icon={<FaInstagram />}
+                    aria-label="Botão que redireciona para o instagram do Luiz Althman"
                 />
             </IconBgRoot>
             <span className="text-white/50 text-left">

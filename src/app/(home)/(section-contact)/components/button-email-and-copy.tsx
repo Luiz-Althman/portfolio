@@ -17,7 +17,7 @@ export function ButtonEmailAndCopy() {
     }
     return (
         <div className="flex flex-col">
-            <span className="text-xl text-purple md:text-center text-start">
+            <span className="text-xl text-purple-100 md:text-center text-start">
                 E-mail:{' '}
             </span>
             <div className="flex items-center md:gap-3 gap-5">
@@ -26,6 +26,7 @@ export function ButtonEmailAndCopy() {
                 <button
                     onClick={copyInviteLink}
                     disabled={copied}
+                    aria-label="Botão para copiar e-mail"
                     className="flex items-center gap-2 text-purple/50 transition duration-300 cursor-pointer relative group disabled:cursor-not-allowed"
                 >
                     {copied ? (

@@ -28,7 +28,7 @@ export function SectionContact() {
             </div>
             <Link
                 href="#section-banner"
-                className="text-purple/50 flex items-center gap-2 mt-16 hover:text-white transition duration-300"
+                className="text-purple-100 flex items-center gap-2 mt-16 hover:text-white transition duration-300"
             >
                 Voltar ao topo <FaArrowUp />
             </Link>

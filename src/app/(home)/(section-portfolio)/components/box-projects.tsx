@@ -20,7 +20,7 @@ const projects = [
             'E-commerce desenvolvido do zero para a empresa Best Hunter Wine. Aplicação feita em mobile e desktop.',
         flags: ['Online', 'ReactJs', 'NextJs', 'Material UI'],
         src: bhw,
-        alt: 'text alt',
+        alt: 'E-commerce Best Hunter Wine',
         link: 'https://besthunterwine.com.br/',
     },
     {
@@ -30,7 +30,7 @@ const projects = [
             'Aplicativo web view para ortopedia 4.0 e venda de orteses 3D (scans feitos dentro do app), para desktop e mobile com integração nativa.',
         flags: ['ReactJs', 'Tailwind CSS', 'Typescript', 'Yup'],
         src: hefesto,
-        alt: 'text alt',
+        alt: 'Aplicativo da Hefesto Medtech',
     },
     {
         id: 2,
@@ -39,7 +39,7 @@ const projects = [
             'Design system publicado no NPM. Projeto feito do zero dentro do curso da Rocketseat, com hospedagem no github pages.',
         flags: ['Online', 'ReactJs', 'Stitches', 'Typescript'],
         src: storybook,
-        alt: 'text alt',
+        alt: 'Storybook pessoal',
         link: 'https://luiz-althman.github.io/design-system/?path=/docs/home--docs',
     },
     {
@@ -49,7 +49,7 @@ const projects = [
             'Aplicação onde o usuário pode retirar seu ingresso e criar um link de convite.',
         flags: ['ReactJs', 'NextJs', 'Tailwind CSS', 'Rockeatseat', 'Zod'],
         src: codecraft,
-        alt: 'text alt',
+        alt: 'Codecraft evento',
     },
     {
         id: 4,
@@ -58,7 +58,7 @@ const projects = [
             'Sistema de backoffice para gerenciamento de restaurantes com testes unitários.',
         flags: ['ReactJs', 'ViteJs', 'Typescript', 'Tailwind CSS'],
         src: pizzashop,
-        alt: 'text alt',
+        alt: 'Plataforma de gestão',
     },
     {
         id: 5,
@@ -67,7 +67,7 @@ const projects = [
             'Site feito para uma empresa de DevOps, onde eles conseguiam divulgar seus serviços. Integrado com Typeform.',
         flags: ['Online', 'ReactJs', 'NextJs', 'Bootstrap'],
         src: kube,
-        alt: 'text alt',
+        alt: 'Site para exibição da 4kube',
         link: 'https://4kube.com',
     },
 ];
@@ -91,7 +91,10 @@ export function BoxProjects() {
     }, []);
 
     return (
-        <div id="projects-section" className="flex flex-col md:grid md:grid-cols-3 gap-12">
+        <div
+            id="projects-section"
+            className="flex flex-col md:grid md:grid-cols-3 gap-12"
+        >
             {projects.map((item, index) => (
                 <motion.div
                     key={item.id}
