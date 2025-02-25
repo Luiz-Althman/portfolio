@@ -6,8 +6,8 @@ export const BoxWorksArray = [
         subtitle: 'Freelancer',
         description:
             'Serviços freelancer em vários tipos de projetos. Sites, softwares, e muito mais. ',
-        time: '2023 · Atualmente',
-        period: 'Outubro/2023',
+        time: '1.5 anos',
+        period: 'Outubro/2023 - Atual',
     },
     {
         id: 1,

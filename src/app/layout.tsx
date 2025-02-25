@@ -11,7 +11,7 @@ const raleway = Raleway({
 export const metadata: Metadata = {
     title: 'DEV - Luiz Althman',
     icons: {
-        icon: './favicon.svg',
+        icon: '/favicon.svg',
     },
     description:
         'Explore meu portfólio e conheça meus projetos como desenvolvedor front-end. Especializado em React, Next.js e tecnologias modernas, crio interfaces dinâmicas, acessíveis e otimizadas para a melhor experiência do usuário. Veja meus trabalhos, minhas habilidades e entre em contato para colaborações!',
