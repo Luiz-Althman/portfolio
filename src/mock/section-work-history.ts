@@ -84,7 +84,7 @@ export const BoxAcademicArray = [
         subtitle: 'Faculdade Impacta',
         description:
             'Desenvolvimento de projetos utilizando ReactJs onde um deles era uma rede social.',
-        time: '2.5 anos',
+        time: '2.6 anos',
         period: 'Outubro/2022 - Dezembro/2024',
     },
     {
@@ -92,7 +92,7 @@ export const BoxAcademicArray = [
         title: 'Web Designer',
         subtitle: 'SENAI de Informática',
         description:
-            'Curso de Html, Css, Javascript puro. Fiz meu prmieiro projeto de um site no figma e o desenvolvi.',
+            'Curso de Html, Css, Javascript puro. Fiz meu primeiro projeto de um site no figma e o desenvolvi.',
         time: '3 meses',
         period: 'Janeiro/2022 - Março/2022',
     },
