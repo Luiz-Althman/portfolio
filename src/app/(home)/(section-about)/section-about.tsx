@@ -65,8 +65,8 @@ export function SectionAbout() {
                         <p>
                             👋{' '}
                             <span className="text-white/50">
-                                Me chamo Luiz Henrique Althman, mas pode me
-                                chamar de Althman, Luiz Althman...Como preferir.
+                                Mas pode me chamar de Althman, Luiz
+                                Althman...Como preferir.
                             </span>
                             😊{' '}
                             <span className="text-white/50">Muito prazer!</span>

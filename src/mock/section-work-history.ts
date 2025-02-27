@@ -15,7 +15,7 @@ export const BoxWorksArray = [
         subtitle: 'Hefesto Medtech',
         description:
             'Desenvolvimento de um app web view com integração nativa (Apple) e de um Backoffice para gestão da plataforma.',
-        time: '1 ano e 6 meses',
+        time: '1.6 anos',
         period: 'Maio/2022 - Outubro/2023',
     },
     {
@@ -70,6 +70,16 @@ export const BoxAcademicArray = [
     },
     {
         id: 2,
+        isActive: false,
+        title: 'Mini curso de React Native',
+        subtitle: 'Rocketseat',
+        description:
+            'Desenvolvi um aplicativo que guarda, cria, redireciona e deleta, links que o usuário pode armazenar em seu dispositivo (Android e iOS).',
+        time: '5 dias',
+        period: 'Fevereiro/2025',
+    },
+    {
+        id: 3,
         title: 'Análise e Desenvolvimento de Sistemas',
         subtitle: 'Faculdade Impacta',
         description:
@@ -78,7 +88,7 @@ export const BoxAcademicArray = [
         period: 'Outubro/2022 - Dezembro/2024',
     },
     {
-        id: 3,
+        id: 4,
         title: 'Web Designer',
         subtitle: 'SENAI de Informática',
         description:
