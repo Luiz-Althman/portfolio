@@ -6,11 +6,11 @@ export function Footer() {
     return (
         <footer className="flex flex-col justify-center items-center gap-2 max-w-[1240px] mx-auto py-4">
             <IconBgRoot>
-                {/* <IconBgIcon
+                <IconBgIcon
                     href="https://www.linkedin.com/in/luiz-althman-173656245/"
                     icon={<FaLinkedinIn />}
                     aria-label="Botão que redireciona para o linkedin do Luiz Althman"
-                /> */}
+                />
                 <IconBgIcon
                     href=""
                     //https://github.com/Luiz-Althman
