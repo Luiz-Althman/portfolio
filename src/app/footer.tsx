@@ -12,7 +12,8 @@ export function Footer() {
                     aria-label="Botão que redireciona para o linkedin do Luiz Althman"
                 /> */}
                 <IconBgIcon
-                    href="https://github.com/Luiz-Althman"
+                    href=""
+                    //https://github.com/Luiz-Althman
                     icon={<FiGithub />}
                     aria-label="Botão que redireciona para o github do Luiz Althman"
                 />
