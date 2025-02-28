@@ -2,7 +2,6 @@ import './globals.css';
 
 import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const raleway = Raleway({
     variable: '--font-raleway',
@@ -26,10 +25,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${raleway.variable}`}>
             <body className="bg-dark antialiased">
-                <main className="">
-                    {children}
-                    <SpeedInsights />
-                </main>
+                <main className="">{children}</main>
             </body>
         </html>
     );
