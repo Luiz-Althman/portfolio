@@ -110,10 +110,7 @@ export function SectionWorkHistory() {
                         ))}
                     </div>
                     <div className="block w-full md:hidden">
-                        <div
-                            className="keen-slider max-w-[330px]"
-                            ref={sliderRef}
-                        >
+                        <div className="keen-slider" ref={sliderRef}>
                             {BoxAcademicArray.map((item) => (
                                 <div
                                     key={item.id}

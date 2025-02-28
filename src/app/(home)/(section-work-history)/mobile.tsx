@@ -18,10 +18,7 @@ export function Mobile() {
     });
 
     return (
-        <div
-            className="md:block hidden keen-slider max-w-[330px]"
-            ref={sliderRef}
-        >
+        <div className="md:block hidden keen-slider" ref={sliderRef}>
             {BoxWorksArray.map((item) => (
                 <div key={item.id} className="keen-slider__slide">
                     <Box
