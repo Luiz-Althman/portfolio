@@ -13,6 +13,7 @@ import animalShelter from '../../../../assets/animal-shelter.jpeg';
 import spotify from '../../../../assets/spotify.jpeg';
 import codecraft from '../../../../assets/codecraft.png';
 import pizzashop from '../../../../assets/pizzashop.png';
+import beautyClinic from '../../../../assets/beauty-clinic.png';
 
 const projects = [
     {
@@ -97,6 +98,22 @@ const projects = [
         src: spotify,
         alt: 'Aplicação clone do Spotify',
         link: 'https://spotify-web-devluiz.vercel.app',
+    },
+    {
+        id: 8,
+        title: 'Clínica de estética',
+        description:
+            'Site institucional feito para uma clínica de estética. Desenvolvido com NextJs v15 e TailwindCSS. Site responsivo e muito otimizado e com motion-react para animações.',
+        flags: [
+            'Online',
+            'ReactJs',
+            'Nextjs v15',
+            'Tailwind v4',
+            'Motion React',
+        ],
+        src: beautyClinic,
+        alt: 'Site institucional para clínica de estética',
+        link: 'https://beauty-clinic-spa.vercel.app',
     },
 ];
 
