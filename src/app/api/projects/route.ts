@@ -1,11 +1,10 @@
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-    apiVersion: '2025-02-24.acacia', // Sempre use a versão mais recente do Stripe
-});
-
 export async function GET() {
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+        apiVersion: '2025-02-24.acacia', // Sempre use a versão mais recente do Stripe
+    });
     try {
         const products = await stripe.products.list();
 
