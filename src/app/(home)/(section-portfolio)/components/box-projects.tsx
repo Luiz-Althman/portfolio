@@ -42,8 +42,7 @@ export function BoxProjects() {
         async function handleProjects() {
             try {
                 const baseUrl =
-                    process.env.NEXT_PUBLIC_SITEE_URL ||
-                    'http://localhost:3000';
+                    process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
                 const response = await axios.get(`${baseUrl}/api/projects`);
 
