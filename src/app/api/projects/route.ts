@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
 export async function GET() {
+    console.log('🔹 STRIPE_SECRET_KEY:', process.env.STRIPE_SECRET_KEY);
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
         apiVersion: '2025-02-24.acacia', // Sempre use a versão mais recente do Stripe
     });
