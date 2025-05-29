@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 import { InfoTitleRoot, InfoTitleText } from '@/components/info-title';
-import Img from '../../../assets/eu-sorrindo.jpg';
 
 export function Mobile() {
     const [isVisible, setIsVisible] = useState(false);
@@ -31,9 +30,9 @@ export function Mobile() {
                 className="w-full flex items-center justify-center pb-6"
             >
                 <Image
-                    src={Img}
+                    src="/eu-sorrindo.jpg"
                     className="rounded-full "
-                    alt="Foto de perfil, Luiz Althman."
+                    alt="Foto de perfil do Luiz Althman."
                     width={250}
                     height={250}
                 />

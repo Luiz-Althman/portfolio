@@ -7,16 +7,6 @@ import { useKeenSlider } from 'keen-slider/react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import bhw from '../../../../assets/bhw.png';
-import hefesto from '../../../../assets/hefesto.jpg';
-import storybook from '../../../../assets/storybook.png';
-import kube from '../../../../assets/4kube.png';
-import animalShelter from '../../../../assets/animal-shelter.jpeg';
-import spotify from '../../../../assets/spotify.jpeg';
-import codecraft from '../../../../assets/codecraft.png';
-import pizzashop from '../../../../assets/pizzashop.png';
-import beautyClinic from '../../../../assets/beauty-clinic.png';
-
 const projects = [
     {
         id: 0,
@@ -30,7 +20,7 @@ const projects = [
             'Material UI',
             'Styled-components',
         ],
-        src: bhw,
+        src: '/bhw.png',
         alt: 'E-commerce Best Hunter Wine',
         link: 'https://besthunterwine.com.br/',
     },
@@ -40,7 +30,7 @@ const projects = [
         description:
             'Aplicativo web view para ortopedia 4.0 e venda de orteses 3D (scans feitos dentro do app), para desktop e mobile com integração nativa.',
         flags: ['ReactJs', 'Tailwind CSS', 'Typescript', 'Yup'],
-        src: hefesto,
+        src: '/hefesto.jpg',
         alt: 'Aplicativo da Hefesto Medtech',
     },
     {
@@ -49,7 +39,7 @@ const projects = [
         description:
             'Design system publicado no NPM. Projeto feito do zero dentro do curso da Rocketseat, com hospedagem no github pages.',
         flags: ['Online', 'ReactJs', 'Stitches', 'Typescript'],
-        src: storybook,
+        src: '/storybook.png',
         alt: 'Storybook pessoal',
         link: 'https://luiz-althman.github.io/design-system/?path=/docs/home--docs',
     },
@@ -59,7 +49,7 @@ const projects = [
         description:
             'Aplicação onde o usuário pode retirar seu ingresso e criar um link de convite. Onde possui um ranking de quais usuários mais tiveram mais convites.',
         flags: ['ReactJs', 'NextJs v15', 'Tailwind v4', 'Typescript'],
-        src: codecraft,
+        src: '/codecraft.png',
         alt: 'Plataforma de invites',
     },
     {
@@ -68,7 +58,7 @@ const projects = [
         description:
             'Sistema de backoffice para gerenciamento de restaurantes com testes unitários. Com login feito por Magic Link',
         flags: ['ReactJs', 'ViteJs', 'ShadCN UI', 'Tailwind CSS'],
-        src: pizzashop,
+        src: '/pizzashop.png',
         alt: 'Plataforma de gestão de restaurantes.',
     },
     {
@@ -77,7 +67,7 @@ const projects = [
         description:
             'Site feito para uma empresa de DevOps, onde eles conseguiam divulgar seus serviços. Integrado com Typeform.',
         flags: ['Online', 'ReactJs', 'NextJs v13', 'Bootstrap'],
-        src: kube,
+        src: '/4kube.png',
         alt: 'Site institucional para exibição da 4kube',
         link: 'https://4kube.com',
     },
@@ -87,7 +77,7 @@ const projects = [
         description:
             'Site institucional de um abrigo de animais. Feito apenas para desktop e hospedado na Railway.',
         flags: ['ReactJs', 'Vite', 'Tailwind v4', 'Railway'],
-        src: animalShelter,
+        src: '/animal-shelter.jpeg',
         alt: 'Site institucional de abrigo de animais',
     },
     {
@@ -96,7 +86,7 @@ const projects = [
         description:
             'Uma aplicação clone do Spotify e com integração do next/intl para tradução (en/pt-br). Feito apenas para desktop.',
         flags: ['ReactJs', 'Nextjs v15', 'Tailwind v4', 'Next/Intl'],
-        src: spotify,
+        src: '/spotify.jpeg',
         alt: 'Aplicação clone do Spotify',
     },
     {
@@ -111,7 +101,7 @@ const projects = [
             'Tailwind v4',
             'Motion React',
         ],
-        src: beautyClinic,
+        src: '/beauty-clinic.png',
         alt: 'Site institucional para clínica de estética',
         link: 'https://beauty-clinic-spa.vercel.app',
     },

@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 import { InfoTitleRoot, InfoTitleText } from '@/components/info-title';
-import Img from '../../../assets/eu-sorrindo.jpg';
 import { Mobile } from './mobile';
 
 export function SectionAbout() {
@@ -42,9 +41,11 @@ export function SectionAbout() {
                     className="w-1/3"
                 >
                     <Image
-                        src={Img}
+                        src="/eu-sorrindo.jpg"
                         className="rounded-full "
-                        alt="Foto de perfil, Luiz Althman."
+                        alt="Foto de perfil do Luiz Althman."
+                        width={450}
+                        height={450}
                     />
                 </motion.div>
 
