@@ -5,7 +5,7 @@ export function ButtonDownload() {
     return (
         <Link
             download
-            href="/files/cv.pdf"
+            href="/files/cv-luiz-althman-2025.pdf"
             target="_blank"
             className="flex items-center font-semibold hover:text-white transition duration-300"
         >
