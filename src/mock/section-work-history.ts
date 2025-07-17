@@ -50,27 +50,24 @@ export const BoxWorksArray = [
 export const BoxAcademicArray = [
     {
         id: 0,
-        isActive: false,
-        title: 'NLW connect #19 - ReactJs',
+        title: 'NLW #20 - Full-Stack Avançado',
         subtitle: 'Rocketseat',
         description:
-            'Desenvolvi um site responsivo para inscrição em eventos, onde o usuário pode retirar seu ingresso e criar um link de convite.',
+            'Criei uma aplicação para lives onde você gerencia perguntas da audiência e conta com um Agente de IA (Gemini) que prevê respostas e ajuda em tempo real!',
         time: '5 dias',
-        period: 'Fevereiro/2025',
+        period: 'Julho/2025',
     },
     {
         id: 1,
-        isActive: false,
-        title: 'NLW connect #19 - NodeJs',
+        title: 'NLW #19 - ReactJs & NodeJs',
         subtitle: 'Rocketseat',
         description:
-            'Desenvolvi a API para uma aplicação de inscrição em eventos, onde o usuário pode retirar seu ingresso e criar um link de convite.',
+            'Desenvolvi um site responsivo e uma API para inscrição em eventos, onde o usuário pode retirar seu ingresso e criar um link de convite.',
         time: '5 dias',
         period: 'Fevereiro/2025',
     },
     {
         id: 2,
-        isActive: false,
         title: 'Mini curso de React Native',
         subtitle: 'Rocketseat',
         description:

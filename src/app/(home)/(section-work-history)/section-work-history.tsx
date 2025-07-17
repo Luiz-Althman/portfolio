@@ -99,7 +99,6 @@ export function SectionWorkHistory() {
                                 viewport={{ once: true }}
                             >
                                 <Box
-                                    isActive={item.isActive}
                                     description={item.description}
                                     period={item.period}
                                     title={item.title}
@@ -117,7 +116,6 @@ export function SectionWorkHistory() {
                                     className="keen-slider__slide"
                                 >
                                     <Box
-                                        isActive={item.isActive}
                                         description={item.description}
                                         period={item.period}
                                         title={item.title}
