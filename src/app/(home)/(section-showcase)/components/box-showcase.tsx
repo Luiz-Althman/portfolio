@@ -16,7 +16,7 @@ const boxs = [
     {
         id: 1,
         icon: <GoFileDirectory className="text-4xl" />,
-        text: '+ de 15 projetos',
+        text: '+ de 20 projetos',
         title: 'Desenvolvidos',
     },
     {
