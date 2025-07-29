@@ -33,6 +33,16 @@ const projects = [
     },
     {
         id: 2,
+        title: 'Grupo Parakundê',
+        description:
+            'Website desenvolvido para o grupo Parakundê de samba. Responsivo, alta performance, Google planilhas integrado para gestão de agenda de shows eventos.',
+        flags: ['Online', 'ReactJs', 'NextJs', 'Typescript'],
+        src: '/parakunde.jpg',
+        alt: 'Website do grupo Parakundê',
+        link: 'https://parakunde.com.br',
+    },
+    {
+        id: 3,
         title: 'Design System',
         description:
             'Design system publicado no NPM. Projeto feito do zero dentro do curso da Rocketseat, com hospedagem no github pages.',
@@ -42,7 +52,7 @@ const projects = [
         link: 'https://luiz-althman.github.io/design-system/?path=/docs/home--docs',
     },
     {
-        id: 3,
+        id: 4,
         title: 'Codecraft - Rockeatseat',
         description:
             'Aplicação onde o usuário pode retirar seu ingresso e criar um link de convite. Onde possui um ranking de quais usuários mais tiveram mais convites.',
@@ -51,16 +61,16 @@ const projects = [
         alt: 'Plataforma de invites',
     },
     {
-        id: 4,
+        id: 5,
         title: 'Pizza shop',
         description:
-            'Sistema de backoffice para gerenciamento de restaurantes com testes unitários. Onde possui um ranking de quais usuários mais tiveram mais convites.',
+            'Sistema de backoffice para gerenciamento de restaurantes com testes unitários. Com login feito por Magic Link.',
         flags: ['ReactJs', 'ViteJs', 'ShadCN UI', 'Tailwind CSS'],
         src: '/pizzashop.png',
         alt: 'Plataforma de gestão de restaurantes.',
     },
     {
-        id: 5,
+        id: 6,
         title: '4Kube',
         description:
             'Site feito para uma empresa de DevOps, onde eles conseguiam divulgar seus serviços. Integrado com Typeform.',
@@ -70,7 +80,7 @@ const projects = [
         link: 'https://4kube.com',
     },
     {
-        id: 6,
+        id: 7,
         title: 'Abrigo de animais',
         description:
             'Site institucional de um abrigo de animais. Feito apenas para desktop e hospedado na Railway.',
@@ -80,7 +90,7 @@ const projects = [
         link: 'https://animal-shelter.up.railway.app/',
     },
     {
-        id: 7,
+        id: 8,
         title: 'Spotify Clone',
         description:
             'Uma aplicação clone do Spotify e com integração do next/intl para tradução (en/pt-br). Feito apenas para desktop.',
@@ -90,7 +100,7 @@ const projects = [
         link: 'https://spotify-web-devluiz.vercel.app',
     },
     {
-        id: 8,
+        id: 9,
         title: 'Clínica de estética',
         description:
             'Site institucional feito para uma clínica de estética. Desenvolvido com NextJs v15 e TailwindCSS. Site responsivo e muito otimizado e com motion-react para animações.',
@@ -141,7 +151,9 @@ export function BoxProjects() {
                         delay: index * 0.1,
                     }}
                     className={`w-full border rounded-2xl p-7 ${
-                        item.id % 2 !== 0 ? 'bg-purple/10' : 'border-purple/50'
+                        item.id % 2 !== 0
+                            ? 'bg-purple/10 border-none'
+                            : 'border-purple/50'
                     }`}
                 >
                     <div className="flex justify-between">

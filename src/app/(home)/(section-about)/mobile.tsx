@@ -30,8 +30,8 @@ export function Mobile() {
                 className="w-full flex items-center justify-center pb-6"
             >
                 <Image
-                    src="/eu-sorrindo.jpg"
-                    className="rounded-full "
+                    src="/luiz-website.jpg"
+                    className="rounded-full"
                     alt="Foto de perfil do Luiz Althman."
                     width={250}
                     height={250}

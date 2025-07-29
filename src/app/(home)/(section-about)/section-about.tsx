@@ -41,8 +41,8 @@ export function SectionAbout() {
                     className="w-1/3"
                 >
                     <Image
-                        src="/eu-sorrindo.jpg"
-                        className="rounded-full "
+                        src="/luiz-website.jpg"
+                        className="rounded-full"
                         alt="Foto de perfil do Luiz Althman."
                         width={450}
                         height={450}
