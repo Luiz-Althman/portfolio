@@ -12,7 +12,7 @@ export function Mobile() {
             <div className="flex justify-center">
                 <IconBgRoot>
                     <IconBgIcon
-                        href="https://www.linkedin.com/in/luiz-althman-173656245/"
+                        href="https://www.linkedin.com/in/luizalthman"
                         icon={<FaLinkedinIn />}
                         aria-label="Botão que redireciona para o linkedin do Luiz Althman"
                     />
